@@ -1,0 +1,4 @@
+FROM niktrix/docker-tomcat7
+MAINTAINER Codenvy Corp
+ADD $app$ /tmp/$app$
+CMD /bin/bash -cl "java -classpath /tmp/$app$ hello.Main genaandall"
